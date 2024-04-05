@@ -1,69 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
     <title>DebtShark</title>
 </head>
+
 <body>
     <header>
         <div class="logo">
-            <img src="./img/logo.jpg" alt="Logo" class="logo-img">
+            <img src="./img/shark logo/OIG1.AvLGlD8ETk2EoDeP.jpg" alt="Logo" class="logo-img">
         </div>
         <nav>
             <ul>
                 <li><a href="./guide.html">Guide</a></li>
-                <li><a href="#">Community</a></li>
+                <li><a href="./community.html">Community</a></li>
                 <li><a href="./about.html">About Us</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
             </ul>
         </nav>
         <div class="logout">
-            <button type="button">LogOut</button>  
+            <a href="./login.html"><button type="button">LogOut</button></a>
         </div>
     </header>
 
     <div id="side-menu" class="menu">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a class="menu-content" href="#">Dashboard</a>
-        <a class="menu-content" href="#">Financial Analysis</a>
-        <a class="menu-content" href="#">Debt Repayment Strategies</a>
-        <a class="menu-content" href="#">Profile</a>
+        <a class="menu-content" href="index.html">Dashboard</a>
+        <a class="menu-content" href="./debt.html">Debt Repayment Strategies</a>
+        <a class="menu-content" href="./profile.html">Profile</a>
     </div>
-    
-    <button class="menu-btn" onclick="openNav()">&#9776; Menu</button>   
+
+    <button class="menu-btn" onclick="openNav()">&#9776; Menu</button>
 
     <!-- Reduced size canvas for the pie chart -->
     <div id="chartContainer"></div>
     <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
     <script>
-    // JavaScript for drawing pie chart
-    window.onload = function() {
+        // JavaScript for drawing pie chart
+        window.onload = function () {
 
-        var chart = new CanvasJS.Chart("chartContainer", {
-            animationEnabled: true,
-            title: {
-                text: ""
-            },
-            data: [{
-                type: "pie",
-                startAngle: 240,
-                yValueFormatString: "##0.00\"%\"",
-                indexLabel: "{label} {y}",
-                dataPoints: [
-                    {y: 79.45, label: "Expenses"},
-                    {y: 7.31, label: "Surplus"},
-                    {y: 7.06, label: "Savings"},
-                    {y: 4.91, label: "Debts"},
-                ]
-            }]
-        });
-        chart.render();
-        
+            var chart = new CanvasJS.Chart("chartContainer", {
+                animationEnabled: true,
+                title: {
+                    text: ""
+                },
+                data: [{
+                    type: "pie",
+                    startAngle: 240,
+                    yValueFormatString: "##0.00\"%\"",
+                    indexLabel: "{label} {y}",
+                    dataPoints: [
+                        { y: 79.45, label: "Expenses" },
+                        { y: 7.31, label: "Surplus" },
+                        { y: 7.06, label: "Savings" },
+                        { y: 4.91, label: "Debts" },
+                    ]
+                }]
+            });
+            chart.render();
+
         }
     </script>
 
     <script src="./index.js"></script>
+    <div class="goalcontainer">
+        <div class="goal-box">
+            <h2>Goals Set:</h2>
+            <div class="goal-row">
+                <p>Snowball</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="loan-container">
+        <div class="HomeLoan-box">
+            <h2>Upcoming Home Loan Payments:</h2>
+            <div class="goal-row">
+                <p>$150 - 7/4/24</p>
+                <p>$150 - 27/4/24</p>
+            </div>
+            <!-- Content for Home Loan box goes here -->
+        </div>
+        <div class="CarLoan-box">
+            <h2>Upcoming Car Loan Payments:</h2>
+            <div class="goal-row">
+                <p>$250 - 6/4/24</p>
+                <p>$250 - 26/4/24</p>
+            </div>
+            <!-- Content for Car Loan box goes here -->
+        </div>
+    </div>
 </body>
+
 </html>

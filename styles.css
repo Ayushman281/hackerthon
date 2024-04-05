@@ -1,11 +1,15 @@
 body {
+    background-image: url("./img/check8.jpg");
+    background-position: center;
+    background-size: cover;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #ffffff;
 }
 header {
     background-color: #333;
-    color: #fff;
+    color: #A1A6B4;
     padding: 10px 0;
     display: flex;
     justify-content: space-between;
@@ -123,4 +127,60 @@ nav ul li a:hover {
     margin-left: 20px; /* Add left margin to position it on the left */
     padding-left: 300px;
 }
+.goalcontainer {
+    display: flex;
+    justify-content: flex-end; /* Aligns content to the right */
+}
 
+.goal-box {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow */
+    border-radius: 10px; /* Add curved edges */
+    padding: 20px;
+    width: 300px; /* Adjust width as needed */
+    margin-right: 300px; /* Add some margin for spacing */
+    margin-top: 100px;
+}
+
+.goal-box h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.goal-row {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+.loan-container {
+    display: flex;
+}
+
+.CarLoan-box {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow */
+    border-radius: 10px; /* Add curved edges */
+    padding: 20px;
+    width: 300px; /* Adjust width as needed */
+    margin-left: 480px; /* Add margin for spacing */
+    margin-top: 250px;
+    justify-content: flex-end;
+}
+
+.HomeLoan-box {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow */
+    border-radius: 10px; /* Add curved edges */
+    padding: 20px;
+    width: 300px; /* Adjust width as needed */
+    margin-left: 450px; /* Add margin for spacing */
+    margin-top: 250px;
+    justify-content: flex start;
+}
+
+.HomeLoan-box h2,
+.CarLoan-box h2 {
+    color: #333;
+    margin-bottom: 10px;
+}

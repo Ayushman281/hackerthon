@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <style>
+    body {
+        background-image: url("./img/initialpage.jpg");
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+    }
+
+    form {
+      margin-top: 7%;
+      background-color: rgba(255, 255, 255, 0.8); 
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 40px;
+      border-radius: 10px;
+      width: 300px;
+      height: 300px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      color: #555;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 12px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      background-color: #4caf50;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .heading{
+      top: 3%;
+      position: fixed;
+      border-radius: 5px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="heading">
+    <img src="./img/shark logo/OIG1.AvLGlD8ETk2EoDeP.jpg" alt="Logo" class="logo-img">
+  </div>
+  
+
+  <form id="loginForm">
+    <h2>Login To Your Account</h2>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <button type="submit">Log In</button>
+    <br>
+    <br>
+
+    <div class="signup-link">
+      <p>Don't have an account? <a href="signup.html">Sign Up Now</a></p>
+    </div>
+
+  </form>
+
+  <script>
+    document.getElementById("loginForm").addEventListener("submit", function(event) {
+      event.preventDefault(); 
+      window.location.href = "./index.html";
+    });
+  </script>
+</body>
+</html>
