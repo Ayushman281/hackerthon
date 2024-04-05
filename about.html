@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
   <title>About Us</title>
   <style>
     body {
@@ -56,26 +57,70 @@
         text-align: center;
         margin-top: 20px;
     }
+
+    .logout button {
+        background-color: transparent;
+        border: none; 
+        color: red; 
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        font-size: 22px;
+    }
+    .logout button:hover {
+        background-color: red; 
+        color: white;
+    }
+
   </style>
 </head>
 <body>
+
+    <header>
+        <div class="logo">
+            <img src="./img/logo.jpg" alt="Logo" class="logo-img">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./guide.html">Guide</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="logout">
+            <button type="button">LogOut</button>  
+        </div>
+    </header>
+
+    <div id="side-menu" class="menu">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a class="menu-content" href="./index.html">Dashboard</a>
+        <a class="menu-content" href="#">Financial Analysis</a>
+        <a class="menu-content" href="#">Debt Repayment Strategies</a>
+        <a class="menu-content" href="#">Profile</a>
+    </div>
+    
+    <button class="menu-btn" onclick="openNav()">&#9776; Menu</button>  
+
     <div class="container">
         <h1>About Us</h1>
         <p>Welcome to Simplifying Debt Management! We are dedicated to providing streamlined tools for financial recovery to individuals seeking to manage and overcome debt effectively.</p>
         
-        <img src="https://via.placeholder.com/400x200" alt="Simplifying Debt Management" style="display: block; margin: 20px auto; border-radius: 8px;">
         <h2>Our Mission</h2>
         <p>Our mission is to empower individuals with the knowledge and resources they need to take control of their finances, eliminate debt, and achieve financial freedom. We understand that debt can be overwhelming, and our goal is to simplify the process and guide you towards a brighter financial future.</p>
-
+        
         <h2>What We Offer</h2>
         <p>At Simplifying Debt Management, we offer comprehensive guides, tools, and strategies for debt repayment, savings, and tax regulation. Whether you're tackling credit card debt, student loans, or planning for your financial future, we're here to help you every step of the way. Our resources are designed to be easy to understand and implement, ensuring that you can make informed decisions and progress towards your financial goals with confidence.</p>
-
+        
         <p>Our team is comprised of financial experts who are passionate about helping others achieve financial wellness. We are committed to providing reliable and up-to-date information to empower you on your journey towards financial stability and success.</p>
+        <img src="./img/finance.jpg" style="display: block; margin: 20px auto; border-radius: 8px;">
     </div>
 
     <footer>
         <p>&copy; 2024 Simplifying Debt Management. All rights reserved.</p>
     </footer>
 
+    <script src="./index.js"></script>
 </body>
 </html>
