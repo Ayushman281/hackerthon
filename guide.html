@@ -3,101 +3,161 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Debt Repayment Guide</title>
+  <title>Financial Guide</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f0f0f0;
-    }
-    .container {
-      max-width: 800px;
-      margin: 20px auto;
-      padding: 20px;
-      background-color: #fff;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-    h1 {
-      text-align: center;
-      color: #333;
-    }
-    .guide {
-      margin-bottom: 20px;
-      padding: 15px;
-      border-radius: 8px;
-    }
-    .guide h2 {
-      color: #fff;
-      background-color: #007bff;
-      padding: 10px;
-      border-radius: 4px;
-      margin-bottom: 10px;
-    }
-    .guide p {
-      color: #666;
-    }
+        body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+        }
+        .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+        text-align: center;
+        color: #333;
+        }
+        .guide {
+        margin-bottom: 20px;
+        padding: 15px;
+        border-radius: 8px;
+        }
+        .guide h2, .guide h3 {
+        color: #fff;
+        background-color: #007bff;
+        padding: 10px;
+        border-radius: 4px;
+        margin-bottom: 10px;
+        }
+        .guide p {
+        color: #666;
+        }
   </style>
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
+    <header>
+        <div class="logo">
+            <img src="./img/logo.jpg" alt="Logo" class="logo-img">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Guide</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="logout">
+            <button type="button">LogOut</button>  
+        </div>
+    </header>
 
-  <div class="container">
-    <h1>Debt Repayment Guide</h1>
-
-    <div class="guide" style="background-color: #f9e79f;">
-      <h2>Snowball Method</h2>
-      <p>The Snowball Method involves paying off debts from smallest to largest, regardless of interest rates. It provides psychological motivation by giving quick wins and building momentum.</p>
+    <div id="side-menu" class="menu">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a class="menu-content" href="./index.html">Dashboard</a>
+        <a class="menu-content" href="#">Financial Analysis</a>
+        <a class="menu-content" href="#">Debt Repayment Strategies</a>
+        <a class="menu-content" href="#">Profile</a>
     </div>
+    
+    <button class="menu-btn" onclick="openNav()">&#9776; Menu</button>   
 
-    <div class="guide" style="background-color: #a9dfbf;">
-      <h2>Avalanche Method</h2>
-      <p>The Avalanche Method prioritizes debts with the highest interest rates first. This approach minimizes overall interest payments, saving more money in the long run.</p>
+    <div class="container">
+        <h1>Financial Guide</h1>
+    
+        <!-- Debt Repayment Strategies -->
+        <h2>Debt Repayment Strategies</h2>
+        <div class="guide" style="background-color: #f9e79f;">
+          <h3>Snowball Method</h3>
+          <p>The Snowball Method involves paying off debts from smallest to largest, regardless of interest rates. It provides psychological motivation by giving quick wins and building momentum.</p>
+        </div>
+    
+        <div class="guide" style="background-color: #a9dfbf;">
+          <h3>Avalanche Method</h3>
+          <p>The Avalanche Method prioritizes debts with the highest interest rates first. This approach minimizes overall interest payments, saving more money in the long run.</p>
+        </div>
+    
+        <div class="guide" style="background-color: #f5b7b1;">
+          <h3>Debt Consolidation</h3>
+          <p>Debt Consolidation combines multiple debts into one loan with a lower interest rate. It simplifies payments and may reduce the total amount of interest paid over time.</p>
+        </div>
+    
+        <div class="guide" style="background-color: #aed6f1;">
+          <h3>Balance Transfer</h3>
+          <p>Balance Transfer involves moving high-interest debt to a credit card with a lower interest rate, often with an introductory 0% APR period. It can save money on interest charges if managed wisely.</p>
+        </div>
+
+        <!-- Income Tax Savings Guides -->
+        <h2>Income Tax Regulation Strategies</h2>
+        <div class="guide" style="background-color: #f9e79f;">
+          <h3>Opt for Tax-Saving Investments</h3>
+          <p>Invest in tax-saving instruments like Public Provident Fund (PPF), Equity Linked Saving Schemes (ELSS), and National Pension System (NPS) to reduce taxable income and save money on taxes.</p>
+        </div>
+    
+        <div class="guide" style="background-color: #a9dfbf;">
+          <h3>Claim Deductions Under Section 80C</h3>
+          <p>Avail deductions under Section 80C for investments in instruments like PPF, ELSS, life insurance premiums, and tuition fees. These deductions can significantly reduce taxable income.</p>
+        </div>
+    
+        <div class="guide" style="background-color: #f5b7b1;">
+          <h3>Utilize Home Loan Benefits</h3>
+          <p>Make use of home loan benefits such as deductions on principal repayment (Section 80C) and interest payment (Section 24). These deductions can substantially lower tax liability.</p>
+        </div>
+    
+        <div class="guide" style="background-color: #aed6f1;">
+          <h3>Maximize Health Insurance Deductions</h3>
+          <p>Opt for health insurance policies and claim deductions under Section 80D. Premiums paid for health insurance for self, family, and parents can reduce taxable income.</p>
+        </div>
+
+        <!-- Saving Strategies -->
+        <h2>Saving Strategies</h2>
+        <div class="guide" style="background-color: #d7bde2;">
+          <h3>50/30/20 Rule</h3>
+          <p>The 50/30/20 rule suggests allocating 50% of income to necessities, 30% to wants, and 20% to savings and debt repayment. This balanced approach promotes financial stability and growth.</p>
+        </div>
+
+        <div class="guide" style="background-color: #f9e79f;">
+          <h3>Automate Savings</h3>
+          <p>Set up automatic transfers from your checking account to your savings account each month. This ensures that you consistently save a portion of your income without having to think about it.</p>
+        </div>
+    
+        <div class="guide" style="background-color: #a9dfbf;">
+          <h3>Cut Unnecessary Expenses</h3>
+          <p>Review your expenses and identify areas where you can cut back. Cancel unused subscriptions, dine out less frequently, and find cheaper alternatives for your daily expenses.</p>
+        </div>
+    
+        <div class="guide" style="background-color: #f5b7b1;">
+          <h3>Set Savings Goals</h3>
+          <p>Establish specific savings goals, whether it's for an emergency fund, a vacation, or a down payment on a house. Having clear objectives motivates you to save consistently.</p>
+        </div>
+    
+        <div class="guide" style="background-color: #aed6f1;">
+          <h3>Invest Wisely</h3>
+          <p>Explore investment options such as mutual funds, stocks, and retirement accounts to grow your savings over time. Consult with a financial advisor to create a diversified investment portfolio.</p>
+        </div>
+    
+      </div>
+      
+      <button class="menu-btn" onclick="openNav()">&#9776; Menu</button> 
+      <div id="side-menu" class="menu">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <a class="menu-content" href="./index.html">Dashboard</a>
+        <a class="menu-content" href="#">Financial Analysis</a>
+        <a class="menu-content" href="#">Debt Repayment Strategies</a>
+        <a class="menu-content" href="#">Profile</a>
     </div>
+    
 
-    <div class="guide" style="background-color: #f5b7b1;">
-      <h2>Debt Consolidation</h2>
-      <p>Debt Consolidation combines multiple debts into one loan with a lower interest rate. It simplifies payments and may reduce the total amount of interest paid over time.</p>
-    </div>
-
-    <div class="guide" style="background-color: #aed6f1;">
-      <h2>Balance Transfer</h2>
-      <p>Balance Transfer involves moving high-interest debt to a credit card with a lower interest rate, often with an introductory 0% APR period. It can save money on interest charges if managed wisely.</p>
-    </div>
-
-    <div class="guide" style="background-color: #d7bde2;">
-      <h2>Increase Income</h2>
-      <p>Increasing income through additional work or side hustles provides more funds to allocate towards debt repayment. It accelerates the debt payoff process and reduces financial stress.</p>
-    </div>
-
-    <div class="guide" style="background-color: #f9e79f;">
-      <h2>Budgeting</h2>
-      <p>Creating a budget helps track expenses and identify areas to cut back, freeing up more money for debt payments. It's a crucial step in managing finances effectively.</p>
-    </div>
-
-    <div class="guide" style="background-color: #a9dfbf;">
-      <h2>Emergency Fund</h2>
-      <p>Building an emergency fund safeguards against unexpected expenses and prevents reliance on credit cards during emergencies. It reduces the risk of falling back into debt.</p>
-    </div>
-
-    <div class="guide" style="background-color: #f5b7b1;">
-      <h2>Debt Snowflake</h2>
-      <p>Debt Snowflake involves making small, extra payments towards debt whenever possible. This includes using spare change or cutting back on non-essential expenses to accelerate debt payoff.</p>
-    </div>
-
-    <div class="guide" style="background-color: #aed6f1;">
-      <h2>Debt Counseling</h2>
-      <p>Seeking guidance from a professional debt counselor offers personalized strategies and support for managing debt effectively. It provides valuable insights and resources for financial stability.</p>
-    </div>
-
-    <div class="guide" style="background-color: #d7bde2;">
-      <h2>Debt Settlement</h2>
-      <p>Debt Settlement involves negotiating with creditors to settle debts for less than the full amount owed. It can help alleviate financial burdens and expedite the path to debt freedom.</p>
-    </div>
-
-    <!-- Add more guides here -->
-
-  </div>
+    <script src="./index.js"></script>
 
 </body>
+
 </html>
