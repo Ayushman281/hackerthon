@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
-    <title>My Website</title>
-    
+    <title>DebtShark</title>
 </head>
 <body>
     <header>
@@ -25,7 +24,46 @@
         </div>
     </header>
 
-    <!-- Your page content goes here -->
+    <div id="side-menu" class="menu">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a class="menu-content" href="#">Dashboard</a>
+        <a class="menu-content" href="#">Financial Analysis</a>
+        <a class="menu-content" href="#">Debt Repayment Strategies</a>
+        <a class="menu-content" href="#">Profile</a>
+    </div>
+    
+    <button class="menu-btn" onclick="openNav()">&#9776; Menu</button>   
 
+    <!-- Reduced size canvas for the pie chart -->
+    <div id="chartContainer"></div>
+    <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+    <script>
+    // JavaScript for drawing pie chart
+    window.onload = function() {
+
+        var chart = new CanvasJS.Chart("chartContainer", {
+            animationEnabled: true,
+            title: {
+                text: ""
+            },
+            data: [{
+                type: "pie",
+                startAngle: 240,
+                yValueFormatString: "##0.00\"%\"",
+                indexLabel: "{label} {y}",
+                dataPoints: [
+                    {y: 79.45, label: "Expenses"},
+                    {y: 7.31, label: "Surplus"},
+                    {y: 7.06, label: "Savings"},
+                    {y: 4.91, label: "Debts"},
+                ]
+            }]
+        });
+        chart.render();
+        
+        }
+    </script>
+
+    <script src="./index.js"></script>
 </body>
 </html>

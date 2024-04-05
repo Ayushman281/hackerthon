@@ -62,3 +62,64 @@ nav ul li a:hover {
     color: white;
 }
 
+
+/* The sidepanel menu */
+.menu {
+    margin-top: 122px;
+    height: 2500px; /* Specify a height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+  }
+  
+  /* The sidepanel links */
+  .menu a {
+    padding: 8px 8px 8px 32px; /* Adjust padding to add gaps */
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    margin-bottom: 30px; /* Add margin-bottom to create gaps */
+}
+
+  
+  /* When you mouse over the navigation links, change their color */
+  .menu a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .menu .menu-btn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* Style the button that is used to open the sidepanel */
+  .menu-btn {
+    
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .menu-btn:hover {
+    background-color: #444;
+  }
+  #chartContainer {
+    width: 300px; /* Adjust the width as needed */
+    margin-left: 20px; /* Add left margin to position it on the left */
+    padding-left: 300px;
+}
