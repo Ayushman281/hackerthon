@@ -48,8 +48,22 @@ nav ul li a:hover {
     margin-right: 150px;
 }
 .logo-img{
-    height: 100px;
-    width: 550px;
+    height: 150px;
+    width: 150px;
+}
+.logo {
+    position: relative;
+    text-align: center;
+}
+
+.logo-name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    padding-left: 350px;
 }
 
 .logout button {
